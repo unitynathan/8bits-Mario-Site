@@ -10,6 +10,8 @@
 .slide-content {
   margin: 0 4 0px;
   overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .card {
