@@ -5,22 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LEVEL UP Games e Informática</title>
-    <link rel="stylesheet" href="/8bits-mario-site.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <!-- slider1 -->
+    <link rel="stylesheet" href="/Styles/slider1.css">
+    <!-- slider2 -->
+    <link rel="stylesheet" href="/Styles/slider2.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="/Styles/unpkg.com_swiper@8.1.6_swiper-bundle.min.css">
+    <link rel="stylesheet" href="/Styles/glider.min.css">
+
 </head>
 
 <body>
     <header>
         <div class="cabecalho">
             <div class="logo">
-
+                <img src="" alt="">
             </div>
             <nav class="navbar">
                 <ul>
-                    <li><a title="Inicio" href="">Inicio</a></li>
-                    <li><a title="Destaques" href="">Destaques</a></li>
-                    <li><a title="Imagensdejogos" href="">Imagens</a></li>
-                    <li><a title="Produtos" href="">Produtos</a></li>
-                    <li><a title="Avaliações" href="">Avaliações</a></li>
+                    <li><a class="textfont" title="Inicio" href="">Inicio</a></li>
+                    <li><a class="textfont" title="Destaques" href="">Destaques</a></li>
+                    <li><a class="textfont" title="Imagensdejogos" href="">Imagens</a></li>
+                    <li><a class="textfont" title="Produtos" href="">Produtos</a></li>
+                    <li><a class="textfont" title="Avaliações" href="">Avaliações</a></li>
                 </ul>
             </nav>
             <div class="temaescuro">
@@ -29,59 +42,378 @@
         </div>
     </header>
     <main>
-        <div> <!--div do background-->
+        <div class="background"> <!--div do background-->
             <div>
-                <img src="" alt="Imagem do personagem de vídeogames Super Mario">
+                <img id="personagem" src="" alt="Imagem do personagem de vídeogames Super Mario">
             </div>
             <div>
                 <h1>Level UP! Games</h1>
             </div>
             <div>
-                <img src="" alt="Imagem do personagem de vídeogames Sonic">
+                <img id="personagem" src="" alt="Imagem do personagem de vídeogames Sonic">
             </div>
         </div>
-        <div>
-            <section aria-labelledby="destaque">
-                <h2 id="destaque">Destaques</h2>
+        <div class="fase1">
+            <section class="p-slider" aria-labelledby="destaque">
+                <!-- heading -->
+                <h2 class="titlefont" id="destaque">Destaques</h2>
+
+                <!-- buttons -->
+                <div class="slider-btns">
+                    <button aria-label="Previous" class="glider-prev">
+                        <span></span>
+                    </button>
+                    <button aria-label="Next" class="glider-next">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="glider-contain">
+                    <div class="glider">
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="/Images/13160112901226.jpg" class="p-img-front" alt="front">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Console</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Xbox</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$1200</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="/Images/13160112901226.jpg" class="p-img-front" alt="front">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Console</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Xbox</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$1200</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="/Images/13160112901226.jpg" class="p-img-front" alt="front">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Console</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Xbox</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$1200</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="/Images/13160112901226.jpg" class="p-img-front" alt="front">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Console</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Xbox</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$1200</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="/Images/13160112901226.jpg" class="p-img-front" alt="front">
+
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Console</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Xbox</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$1200</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="/Images/13160112901226.jpg" class="p-img-front" alt="front">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Console</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Xbox</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$1200</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </section>
-            <div>
-                <!-- div pro carrossel de destaque -->
-            </div>
         </div>
-        <div>
+        <div class="fase2">
             <section aria-labelledby="imagens">
-                <h2 id="imagens">Imagens e Frases de Jogos</h2>
-                <div>
+                <h2 class="titlefont" id="imagens">Imagens e Frases de Jogos</h2>
+                <div class="imagens textfont">
                     <!-- div pras imagens e frases -->
                 </div>
             </section>
         </div>
-        <div>
+        <div class="fase3">
             <section aria-labelledby="produto">
-                <h2 id="produto">Produtos</h2>
-                <div>
+                <h2 class="titlefont" id="produto">Produtos</h2>
+                <div class="produtos">
                     <!-- div pros produtos -->
                 </div>
             </section>
         </div>
-        <div>
+        <div class="fase4">
             <section aria-labelledby="avaliação">
-                <h2 id="avaliação">Depoimentos</h2>
-                <div>
-                    <!-- div pras avaliações -->
+                <h2 class="titlefont" id="avaliação">Depoimentos</h2>
+                <div class="slider-container swiper">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">João</h2>
+                                    <p class="textfont"> The lorem text the section that contains header with having
+                                        open functionality. Lorem dolor sit amet consectetur adispisicing elit The lorem
+                                        text the section that contains header with having
+                                        open functionality. </p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">João</h2>
+                                    <p class="textfont"> The lorem text the section that contains header with having
+                                        open functionality. Lorem dolor sit amet consectetur adispisicing elit The lorem
+                                        text the section that contains header with having
+                                        open functionality.</p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">João</h2>
+                                    <p class="textfont"> The lorem text the section that contains header with having
+                                        open functionality. Lorem dolor sit amet consectetur adispisicing elit The lorem
+                                        text the section that contains header with having
+                                        open functionality.</p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">João</h2>
+                                    <p class="textfont"> The lorem text the section that contains header with having
+                                        open functionality. Lorem dolor sit amet consectetur adispisicing elit The lorem
+                                        text the section that contains header with having
+                                        open functionality.</p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">João</h2>
+                                    <p class="textfont"> The lorem text the section that contains header with having
+                                        open functionality. Lorem dolor sit amet consectetur adispisicing elit The lorem
+                                        text the section that contains header with having
+                                        open functionality.</p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">João</h2>
+                                    <p class="textfont"> The lorem text the section that contains header with having
+                                        open functionality. Lorem dolor sit amet consectetur adispisicing elit The lorem
+                                        text the section that contains header with having
+                                        open functionality.</p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">João</h2>
+                                    <p class="textfont"> The lorem text the section that contains header with having
+                                        open functionality. Lorem dolor sit amet consectetur adispisicing elit The lorem
+                                        text the section that contains header with having
+                                        open functionality.</p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">João</h2>
+                                    <p class="textfont"> The lorem text the section that contains header with having
+                                        open functionality. Lorem dolor sit amet consectetur adispisicing elit The lorem
+                                        text the section that contains header with having
+                                        open functionality.</p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">João</h2>
+                                    <p class="textfont"> The lorem text the section that contains header with having
+                                        open functionality. Lorem dolor sit amet consectetur adispisicing elit The lorem
+                                        text the section that contains header with having
+                                        open functionality. </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div>
+                <div class="form textfont">
                     <!-- formulário de comentários -->
                 </div>
             </section>
         </div>
     </main>
     <footer>
-        <div>
+        <div class="rodape">
             <!-- div para fazer o rodapé -->
         </div>
     </footer>
+    <!-- Swiper JS -->
+    <script src="/Scripts/unpkg.com_swiper@8.1.6_swiper-bundle.min.js"></script>
+    <script src="/Scripts/glider.min.js"></script>
+
+    <!-- JavaScript -->
+    <!-- slider1 -->
+    <script src="/Scripts/slider1.js"></script>
+    <!-- slider2 -->
+    <script src="/Scripts/slider2.js"></script>
 
 </body>
+
+
+
 
 </html>
