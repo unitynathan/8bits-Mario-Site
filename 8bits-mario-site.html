@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="/Styles/8bits-mario-site.css">
     <!-- slider1 -->
     <link rel="stylesheet" href="/Styles/slider1.css">
     <!-- slider2 -->
@@ -24,8 +25,8 @@
 <body>
     <header>
         <div class="cabecalho">
-            <div class="logo">
-                <img src="" alt="">
+            <div id="logo">
+                <img src="/Images/LEVELUP.png" alt="">
             </div>
             <nav class="navbar">
                 <ul>
@@ -36,9 +37,16 @@
                     <li><a class="textfont" title="Avaliações" href="">Avaliações</a></li>
                 </ul>
             </nav>
-            <div class="temaescuro">
-                <button>Tema Escuro</button>
-            </div>
+            <div id="bottom-dark-mode">
+                <input type="checkbox" class="checkbox" id="chk"/>
+                <label class="label" for="chk">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div> 
+            <script src="/Scripts/8bits-mario-site.js"></script>
+            <script src="https://kit.fontawesome.com/4ba6cacfd0.js" crossorigin="anonymous"></script>
         </div>
     </header>
     <main>
