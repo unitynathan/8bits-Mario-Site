@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/Styles/8bits-mario-site.css">
@@ -20,6 +21,8 @@
     <link rel="stylesheet" href="assets/Styles/unpkg.com_swiper@8.1.6_swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/Styles/glider.min.css">
 
+    <!-- Form CSS -->
+    <link rel="stylesheet" href="assets/Styles/form.css">
 </head>
 
 <body>
@@ -397,16 +400,37 @@
                     <div class="swiper-button-prev swiper-navBtn"></div>
                     <div class="swiper-pagination"></div>
                 </div>
-                <div class="form textfont">
-                    <form action="https://formsubmit.co/ajax/luaneldermendes@gmail.com" mthod="POSTAR">
-                        <label for="nome">Nome:</label> <input type="text" name="nome" id="nome" required>
-                        <label for="email">Email:</label> <input type="email" name="email" id="email" required>
-                        <label for="assunto">Assunto:</label> <input type="assunto" name="assunto" id="assunto"
-                            required>
-                        <label for="mensagem">Mensagem</label> <textarea name="mensagem" id="mensagem"
-                            required></textarea>
-                        <button type="submit">Enviar</button>
+                <div class="form-container">
+                    <div id="form-title">
+                        <h2 class="titlefont">Fale conosco</h2>
+                    </div>
+                    <form action="https://formsubmit.co/ajax/luaneldermendes@gmail.com" mthod="POST">
+                        <div class="form-field">
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nome" id="nome" required>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label for="assunto">Assunto:</label>
+                            <input type="assunto" name="assunto" id="assunto" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea name="mensagem" id="mensagem" required></textarea>
+                        </div>
+                        
+                        <button class="prettyButton" type="submit">Enviar</button>
                     </form>
+                </div>
+                <div  class = "zap">
+                    <img scr= "assets/Images/whatsapp.png" width="50" alt = "Fale Conosco pelo WhatsApp" title="Fale Conosco pelo WhatsApp"/>
+                    <a href='https:api.whatsapp.com/send?phone=5531993327631' class = "icon" target='_blank'></i></a>
                 </div>
             </section>
         </div>
@@ -428,6 +452,8 @@
     <!-- darkmode button -->
     <script src="assets/Scripts/8bits-mario-site.js"></script>
     <script src="https://kit.fontawesome.com/4ba6cacfd0.js" crossorigin="anonymous"></script>
+    
+    
 
 </body>
 
