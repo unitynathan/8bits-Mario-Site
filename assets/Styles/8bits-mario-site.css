@@ -111,3 +111,34 @@
         .dark .fa-moon{
             color:#5a5555
         }
+     /*Estilização do background inicial*/
+        .background{
+            height: 75vh;
+            display: flex;
+            justify-content:  space-between;
+            align-items: center;
+            background-color: blue;
+        }
+        .background h1{
+            font-size: 500%;
+        }
+        #mario{
+            height: 300px;
+            width: 300px;
+            padding-left: 50px;
+            opacity: 0.5;
+            transition: opacity 1s;
+        }
+        #sonic{
+            height: 300px;
+            width: 300px;
+            padding-right: 80px;
+            opacity: 0.5;
+            transition: opacity 1s;
+        }
+        #sonic:hover {
+            opacity: 1;
+        }
+        #mario:hover {
+            opacity: 1;
+        }
