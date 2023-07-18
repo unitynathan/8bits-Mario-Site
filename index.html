@@ -27,37 +27,42 @@
 
 <body>
     <header>
-        <div class="cabecalho">
-            <div id="logo">
-                <img src="assets/Images/LEVELUP.png" alt="">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/Images/LEVELUP.png" alt="logo">
             </div>
-            <nav class="navbar">
-                <ul>
-                    <li><a class="textfont" title="Inicio" href="">Inicio</a></li>
-                    <li><a class="textfont" title="Destaques" href="">Destaques</a></li>
-                    <li><a class="textfont" title="Imagensdejogos" href="">Imagens</a></li>
-                    <li><a class="textfont" title="Produtos" href="">Produtos</a></li>
-                    <li><a class="textfont" title="Avaliações" href="">Avaliações</a></li>
-                </ul>
-            </nav>
-            <div id="bottom-dark-mode">
-                <input type="checkbox" class="checkbox" id="chk" />
-                <label class="label" for="chk">
-                    <i class="fas fa-moon"></i>
-                    <i class="fas fa-sun"></i>
-                    <div class="ball"></div>
-                </label>
+            <ul class="nav-list">
+                <li><a class="textfont" title="Inicio" href="#inicio">Inicio</a></li>
+                <li><a class="textfont" title="Destaques" href="#destaque">Destaques</a></li>
+                <li><a class="textfont" title="Imagensdejogos" href="#imagens">Imagens</a></li>
+                <li><a class="textfont" title="Produtos" href="#produto">Produtos</a></li>
+                <li><a class="textfont" title="Avaliações" href="#avaliacao">Avaliações</a></li>
+                <li><a class="textfont" title="FaleConosco" href="#form-title">Fale Conosco</a></li>
+                <li class="bottom-dark-mode">
+                    <div>
+                        <input type="checkbox" class="checkbox" id="chk" />
+                        <label class="label" for="chk">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                            <div class="ball"></div>
+                        </label>
+                    </div> 
+                </li>
+            </ul>
+            <div class="mobile-menu">
+                <div class = "line"></div>
+                <div class = "line"></div>
+                <div class = "line"></div>
             </div>
-
-        </div>
+        </nav>
     </header>
     <main>
-        <div class="background"> <!--div do background-->
+        <div class="background" id="inicio"> <!--div do background-->
             <div>
                 <img id="mario" src="assets/Images/mario.png" alt="Imagem do personagem de vídeogames Super Mario">
             </div>
             <div>
-                <h1>Level UP! Games</h1>
+                <img src="assets/Images/Level_UP__Games+.png" alt="Logo">
             </div>
             <div>
                 <img id="sonic" src="assets/Images/sonic.png" alt="Imagem do personagem de vídeogames Sonic">
@@ -253,7 +258,7 @@
         </div>
         <div class="fase4">
             <section aria-labelledby="avaliação">
-                <h2 class="titlefont" id="avaliação">Depoimentos</h2>
+                <h2 class="titlefont" id="avaliacao">Depoimentos</h2>
                 <div class="slider-container swiper">
                     <div class="slide-content">
                         <div class="card-wrapper swiper-wrapper">
@@ -451,6 +456,8 @@
     <script src="assets/Scripts/slider2.js"></script>
     <!-- darkmode button -->
     <script src="assets/Scripts/8bits-mario-site.js"></script>
+     <!-- Responsivity navbar-->
+    <script src="assets/Scripts/Mobilenav.js"></script>
     <script src="https://kit.fontawesome.com/4ba6cacfd0.js" crossorigin="anonymous"></script>
     
     
