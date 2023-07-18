@@ -23,7 +23,7 @@
         /*Estilização da logo da barra de navegação*/
             .logo img{
                 height: 8vh;
-                width: 8vh;
+                width: 8vw;
     
             }
         /*Estilização da lista de opções da barra de navegação*/
@@ -62,10 +62,10 @@
                 }
                 .nav-list{
                     position: absolute;
-                    top: 8vh;
+                    top: 10vh;
                     right: 0;
                     width: 100vw;
-                    height: 90vh;
+                    height: 80vh;
                     background-color: black;
                     flex-direction: column;
                     align-items: center;
