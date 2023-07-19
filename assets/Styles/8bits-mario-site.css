@@ -195,13 +195,13 @@
             z-index: 2;
         }
         #mario{
-            height: 55%;
-            width: 55%;
+            height: 52%;
+            width: 52%;
             position: relative;
             padding-left: 1vw;
             margin-left: 1vw;
             opacity: 0.5;
-            padding-top: 5vh;
+            padding-top: 7vh;
             transition: opacity 1s;
             z-index: 1;
         }
@@ -211,7 +211,7 @@
             position: relative;
             margin-left: 10vw;
             padding-left: 1vw;
-            padding-top: 9vh;
+            padding-top: 8vh;
             opacity: 0.5;
             transition: opacity 1s;
             z-index: 1;
@@ -221,4 +221,9 @@
         }
         #mario:hover {
             opacity: 1;
+        }
+        @media (max-width: 900px){
+            .background{
+                height: 50vh;
+            }
         }
