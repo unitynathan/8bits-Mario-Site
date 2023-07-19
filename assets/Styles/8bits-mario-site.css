@@ -35,7 +35,7 @@
                 margin-left: 32px;
             }
             .nav-list li a {
-                color: rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
                 text-decoration: none;
                 letter-spacing: 1px;
             }
@@ -77,6 +77,9 @@
                 .nav-list li{
                     margin-left: 0;
                     opacity: 0;
+                }
+                .nav-list li a{
+                    color:white;
                 }
                 .mobile-menu{
                     display: block;
