@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 /*Configuração padrão da página*/
     *
     {
@@ -5,6 +7,23 @@
         padding: 0;
         box-sizing: border-box;
         font-family: 'Montserrat', sans-serif;
+    }
+    body{
+        position: relative; /* Necessário para posicionar o pseudo-elemento */
+        margin: 0; /* Remover margens padrão do body */
+        padding: 0;
+    }
+    body::before{
+        content: "";
+        background-image: url('../Images/sonic2.png');
+        background-size: 30px 30px;;
+        opacity: 0.1; /* Define a opacidade da imagem de plano de fundo */
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1
     }
     /*Estilização da barra de navegação*/
         /*Estilização padrão de toda a barra de navegação*/
@@ -42,7 +61,8 @@
             .nav-list li a:hover {
                 background-color: #ff0000;
                 color: white;
-                transition: 0.8s;
+                transition: 0.3s;
+                border-radius: 5px;
             }
             .mobile-menu{
                 display: none;
@@ -59,7 +79,7 @@
             @media (max-width: 999px){
                 
                 body{
-                    overflow: hidden;
+                    overflow-x: hidden;
                 }
                 .nav-list{
                     position: absolute;
@@ -153,7 +173,7 @@
             
     /*Estilização do site quando o modo escuro estiver ativado*/
         body.dark{
-            background-color: #5a5555;
+            background-color: #2a2828;
             color: white;
         }
         .dark .navbar{
@@ -177,6 +197,12 @@
         .dark .nav-list li a{
             color: white;
         }
+        .dark .background-name{
+            text-shadow: 2px 2px black;
+        }
+        .dark .titlefont{
+            color: white;
+        }
      /*Estilização do background inicial*/
         .background{
             height: 80vh;
@@ -188,28 +214,39 @@
         }
         .background-name{
             padding: 5px;
-            font-size: 4vw;
+            font-size: 3vw;
             color: white;
             align-items: center;
             position: absolute;
             z-index: 2;
         }
+        .background-name{
+            background: linear-gradient(to right,rgb(10, 208, 10) 20%, rgb(0, 64, 255) , yellow , brown);
+            -webkit-background-clip: text;
+            background-clip: text;
+            text-shadow: 2px 2px  rgb(255, 255, 255);
+            color: transparent;
+           
+        }
+        .background-name h1{
+            font-family: 'Press Start 2P', cursive;
+        }
         #mario{
-            height: 52%;
-            width: 52%;
+            max-height: 42%;
+            width: 42%;
             position: relative;
             padding-left: 1vw;
-            margin-left: 1vw;
+            margin-left: 2vw;
             opacity: 0.5;
             padding-top: 7vh;
             transition: opacity 1s;
             z-index: 1;
         }
         #sonic{
-            height: 65%;
-            width: 65%;
+            max-height: 42%;
+            width: 42%;
             position: relative;
-            margin-left: 10vw;
+            margin-left: 20vw;
             padding-left: 1vw;
             padding-top: 8vh;
             opacity: 0.5;
@@ -225,5 +262,22 @@
         @media (max-width: 900px){
             .background{
                 height: 50vh;
+            }
+            .background-name{
+                font-size: 3vw;
+                padding-top: 8vh;
+                text-shadow: 2px 2px white;
+            }
+            .dark .background-name{
+                text-shadow: 2px 2px black;
+            }
+            #sonic{
+                width: 65%;
+                height: 65%;
+                margin-left: 10vw;
+            }
+            #mario{
+                width: 52%;
+                height: 52%;
             }
         }
