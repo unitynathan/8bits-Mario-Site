@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
-    
+
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/Styles/8bits-mario-site.css">
@@ -16,10 +16,16 @@
     <link rel="stylesheet" href="assets/Styles/slider1.css">
     <!-- slider2 -->
     <link rel="stylesheet" href="assets/Styles/slider2.css">
+    <!-- slider3 -->
+    <link rel="stylesheet" href="assets/Styles/slider3.css">
+    <!-- slider4 -->
+    <link rel="stylesheet" href="assets/Styles/slider4.css">
 
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="assets/Styles/unpkg.com_swiper@8.1.6_swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/Styles/glider.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
     <!-- Form CSS -->
     <link rel="stylesheet" href="assets/Styles/form.css">
@@ -46,13 +52,13 @@
                             <i class="fas fa-sun"></i>
                             <div class="ball"></div>
                         </label>
-                    </div> 
+                    </div>
                 </li>
             </ul>
             <div class="mobile-menu">
-                <div class = "line"></div>
-                <div class = "line"></div>
-                <div class = "line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
         </nav>
     </header>
@@ -90,7 +96,8 @@
                             <div class="p-img-container">
                                 <div class="p-img">
                                     <a href="#">
-                                        <img src="assets/Images/Produtos/mariosonic.jpg" class="p-img-front" alt="front">
+                                        <img src="assets/Images/Produtos/mariosonic.jpg" class="p-img-front"
+                                            alt="Capa do jogo Mario e Sonic at the Olympic Games Tokyo 2020">
                                     </a>
                                 </div>
                             </div>
@@ -101,7 +108,8 @@
                                     <span>Console</span>
                                 </div>
                                 <!-- Title -->
-                                <a href="#" class="product-title">Mario & Sonic At The Olympic Games Tokyo 2020 - Nintendo Switch</a>
+                                <a href="#" class="product-title">Mario & Sonic At The Olympic Games Tokyo 2020 -
+                                    Nintendo Switch</a>
                                 <!-- price buy -->
                                 <div class="price-buy">
                                     <span class="p-price">R$249,89</span>
@@ -115,7 +123,8 @@
                             <div class="p-img-container">
                                 <div class="p-img">
                                     <a href="#">
-                                        <img src="assets/Images/Produtos/funkoyoda.JPG" class="p-img-front" alt="front">
+                                        <img src="assets/Images/Produtos/funkoyoda.JPG" class="p-img-front"
+                                            alt="FUNKO do Yoda">
                                     </a>
                                 </div>
                             </div>
@@ -140,7 +149,8 @@
                             <div class="p-img-container">
                                 <div class="p-img">
                                     <a href="#">
-                                        <img src="assets/Images/Produtos/mariotenis.jpg" class="p-img-front" alt="front">
+                                        <img src="assets/Images/Produtos/mariotenis.jpg" class="p-img-front"
+                                            alt="Capa do jogo Mario Tennis Aces">
                                     </a>
                                 </div>
                             </div>
@@ -165,7 +175,8 @@
                             <div class="p-img-container">
                                 <div class="p-img">
                                     <a href="#">
-                                        <img src="assets/Images/Produtos/funkociri.jpg" class="p-img-front" alt="front">
+                                        <img src="assets/Images/Produtos/funkociri.jpg" class="p-img-front"
+                                            alt="FUNKO Ciri The Witcher">
                                     </a>
                                 </div>
                             </div>
@@ -190,7 +201,8 @@
                             <div class="p-img-container">
                                 <div class="p-img">
                                     <a href="#">
-                                        <img src="assets/Images/Produtos/sonicorigins.jpg" class="p-img-front" alt="front">
+                                        <img src="assets/Images/Produtos/sonicorigins.jpg" class="p-img-front"
+                                            alt="Capa do jogo Sonic Origins">
 
                                     </a>
                                 </div>
@@ -216,7 +228,8 @@
                             <div class="p-img-container">
                                 <div class="p-img">
                                     <a href="#">
-                                        <img src="assets/Images/Produtos/tlou.jpg" class="p-img-front" alt="front">
+                                        <img src="assets/Images/Produtos/tlou.jpg" class="p-img-front"
+                                            alt="Capa do jogo The Last of Us">
                                     </a>
                                 </div>
                             </div>
@@ -241,24 +254,528 @@
             </section>
         </div>
         <div class="fase2">
-            <section aria-labelledby="imagens">
-                <h2 class="titlefont" id="imagens">Imagens e Frases de Jogos</h2>
-                <div class="imagens textfont">
-                    <!-- div pras imagens e frases -->
+            <section class=aria-labelledby="imagens">
+                <h2 class="titlefont padding" id="imagens">Imagens e Frases de Jogos</h2>
+                <div class="slider-container swiper">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card2 swiper-slide">
+                                <div class="imagecontent">
+                                    <div class="cardimg">
+                                        <img src="./assets/Images/Personagens/mario.jpg" alt="Personagem Mario"
+                                            class="img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="name2">Mario</h3>
+                                    <p class="textfont">It’s A-Me, Mario!</p>
+                                </div>
+                            </div>
+                            <div class="card2 swiper-slide">
+                                <div class="imagecontent">
+
+                                    <div class="cardimg">
+                                        <img src="./assets/Images/Personagens/Kratos.jpg" alt="Personagem Kratos"
+                                            class="img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="name2">Kratos</h3>
+                                    <p class="textfont">Zeus! Your Son Has Returned. I Bring The Destruction Of Olympus!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card2 swiper-slide">
+                                <div class="imagecontent">
+                                    <div class="cardimg">
+                                        <img src="./assets/Images/Personagens/obi-wan.jpg"
+                                            alt="Personagem Obi-Wan-Kenobi do filme Star Wars" class="img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="name2">Obi-Wan-Kenobi</h3>
+                                    <p class="textfont"> May the force be with you.</p>
+                                </div>
+                            </div>
+                            <div class="card2 swiper-slide">
+                                <div class="imagecontent">
+                                    <div class="cardimg">
+                                        <img src="./assets/Images/Personagens/sonic.jpg" alt="Personagem Sonic"
+                                            class="img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="name2">Sonic</h3>
+                                    <p class="textfont"> Gotta Go fast</p>
+                                </div>
+                            </div>
+                            <div class="card2 swiper-slide">
+                                <div class="imagecontent">
+                                    <div class="cardimg">
+                                        <img src="./assets/Images/Personagens/gandalf.jpg"
+                                            alt="Personagem Gandalf do Filme O Senhor dos Anéis" class="img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="name2">Gandalf The Grey</h3>
+                                    <p class="textfont"> You shall not pass.</p>
+                                </div>
+                            </div>
+                            <div class="card2 swiper-slide">
+                                <div class="imagecontent">
+                                    <div class="cardimg">
+                                        <img src="./assets/Images/Personagens/uncleben.jpg"
+                                            alt="Personagem Tio Ben do filme Homem Aranha" class="img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="name2">Uncle Ben</h3>
+                                    <p class="textfont"> With great powers, come greats respondabillity</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
         </div>
         <div class="fase3">
-            <section aria-labelledby="produto">
+            <section class="p-slider" aria-labelledby="produto">
+                <!-- heading -->
                 <h2 class="titlefont" id="produto">Produtos</h2>
-                <div class="produtos">
-                    <!-- div pros produtos -->
+
+                <!-- buttons -->
+                <div class="slider-btns2">
+                    <button aria-label="Previous" class="glider2-prev">
+                        <span></span>
+                    </button>
+                    <button aria-label="Next" class="glider2-next">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="glider-contain">
+                    <div class="glider2">
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/nintendoswitch.jpg" class="p-img-front"
+                                            alt="Nintendo Switch">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Console</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Nintendo Switch - Azul Neon/Vermelho Neon</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$2899,99</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/funkoyoda.JPG" class="p-img-front"
+                                            alt="FUNKO do Yoda">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Colecionável</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Funko Pop: Star Wars - Mandalorian The Child </a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$159,90</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/mariotenis.jpg" class="p-img-front"
+                                            alt="Capa do jogo Mario Tennis Aces">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Game</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Mario Tennis Aces - Nintendo Switch</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$499,99</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/nintendocontroller.jpg" class="p-img-front"
+                                            alt="Controle para Nintendo Switch">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Joystick</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">NINTENDO SWITCH PRO CONTROLLER ZELDA TEARS OF THE
+                                    KINGDOM</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$1196,00</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/ps5.jpg" class="p-img-front"
+                                            alt="Playstation 5">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Console</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Playstation 5 Edição Digital 825 GB Sony 4K</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$3520,00</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/controlexbox.jpg" class="p-img-front"
+                                            alt="Controle para Xbox">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Joystick</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Controle Sem Fio Xbox – Remix Special Edition</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$899,00</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/xboxseries.jpg" class="p-img-front"
+                                            alt="Xbox Series">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Console</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Xbox Series S 512GB Branco Microsoft</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$2249,99</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/tlou.jpg" class="p-img-front"
+                                            alt="Capa do jogo The Last of Us">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Game</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">The Last Of Us Part I - Playstation 5</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$349,99</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/funkothewitcher.jpg" class="p-img-front"
+                                            alt="FUNKO do Gerald The Witcher">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Colecionável</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Funko POP Geralt:The Witcher</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$329,99</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/echopop.jpg" p-img-front" alt="Echo Pop alexa">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Eletrônico</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">ECHO POP SMART SPEAKER COM ALEXA - PRETO</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$249,89</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/sonicorigins.jpg" class="p-img-front"
+                                            alt="Capa do jogo Sonic Origins">
+
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Game</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Sonic Origins Plus - Playstation 5</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$270,99</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/fifa23.jpg" p-img-front"
+                                            alt="Capa do jogo Fifa 2023">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Game</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">FIFA 23 - PlayStation 5</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$319,00</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/zeldanintendo.jpg" class="p-img-front"
+                                            alt="Capa do jogo The Legend of Zelda:Tears of The Kingdom">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Game</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">The Legend Of Zelda: Tears Of The Kingdom - Nintendo
+                                    Switch</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$345,00</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/mariosonic.jpg" class="p-img-front"
+                                            alt="Capa do jogo Mario e Sonic at the Olympic Games Tokyo 2020">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Game</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Mario & Sonic At The Olympic Games Tokyo 2020 -
+                                    Nintendo Switch</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$249,89</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/elden-ps5.jpg" class="p-img-front"
+                                            alt="Capa do jogo Elden Ring">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Game</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Elden Ring - PlayStation 5</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$245,99</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/funkociri.jpg" class="p-img-front"
+                                            alt="FUNKO Ciri The Witcher">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Colecionável</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Funko POP Ciri: The Witcher</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$129,90</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
         <div class="fase4">
             <section aria-labelledby="avaliação">
-                <h2 class="titlefont" id="avaliacao">Depoimentos</h2>
+                <h2 class="titlefont padding" id="avaliacao">Depoimentos</h2>
                 <div class="slider-container swiper">
                     <div class="slide-content">
                         <div class="card-wrapper swiper-wrapper">
@@ -278,23 +795,28 @@
                                 <div class="image-content">
                                     <span class="overlay"></span>
                                     <div class="card-image">
-                                        <img src="./assets/Images/Clientes/person2.png" alt="" class="card-img">
+                                        <img src="./assets/Images/Clientes/person2.png"
+                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
                                     </div>
                                 </div>
                                 <div class="card-content">
-                                    <h2 class="name">Isabela</h2>
-                                    <p class="textfont">Funko Pops incríveis!</p>
+                                    <h3 class="name">Isabela</h3>
+                                    <p class="textfont">Minha experiência com a LEVELUP foi fantástica. A loja trás uma
+                                        mágica com os games e produtos que oferecem. Profissionalismo surpreendente.
+                                        Gostaria de parabenizar a todos dessa empresa. Atendimento incrível e
+                                        satisfatório. Super gentis e o contato com eles é maravilhoso.</p>
                                 </div>
                             </div>
                             <div class="card swiper-slide">
                                 <div class="image-content">
                                     <span class="overlay"></span>
                                     <div class="card-image">
-                                        <img src="./assets/Images/Clientes/person3.png" alt="" class="card-img">
+                                        <img src="./assets/Images/Clientes/person3.png"
+                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
                                     </div>
                                 </div>
                                 <div class="card-content">
-                                    <h2 class="name">Lucas</h2>
+                                    <h3 class="name">Lucas</h3>
                                     <p class="textfont"> Entrega rápida. Ótimo!</p>
                                 </div>
                             </div>
@@ -302,72 +824,88 @@
                                 <div class="image-content">
                                     <span class="overlay"></span>
                                     <div class="card-image">
-                                        <img src="./assets/Images/Clientes/person4.png" alt="" class="card-img">
+                                        <img src="./assets/Images/Clientes/person4.png"
+                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
                                     </div>
                                 </div>
                                 <div class="card-content">
-                                    <h2 class="name">André</h2>
-                                    <p class="textfont"> Preços justos. Recomendo.</p>
+                                    <h3 class="name">André</h3>
+                                    <p class="textfont"> A melhor experiência foi com a LEVELUP. Total comprometimento
+                                        com o cliente, prazo de entrega cumprido, mercadoria excelente e atendimento
+                                        excepcional. Só temos que agradecer por cada compra que realizamos na LEVELUP
+                                        sempre nos surpreendemos com o atendimento.</p>
                                 </div>
                             </div>
                             <div class="card swiper-slide">
                                 <div class="image-content">
                                     <span class="overlay"></span>
                                     <div class="card-image">
-                                        <img src="./assets/Images/Clientes/person5.png" alt="" class="card-img">
+                                        <img src="./assets/Images/Clientes/person5.png"
+                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
                                     </div>
                                 </div>
                                 <div class="card-content">
-                                    <h2 class="name">Fernanda</h2>
-                                    <p class="textfont"> Funkos incríveis, amei!</p>
+                                    <h3 class="name">Fernanda</h3>
+                                    <p class="textfont"> Melhor loja para comprar Funkos POP, produto bem embalado, com
+                                        brindes e selos de fidelidades no qual poderei trocar por outros FUNKOS.
+                                        Recomendo o site.</p>
                                 </div>
                             </div>
                             <div class="card swiper-slide">
                                 <div class="image-content">
                                     <span class="overlay"></span>
                                     <div class="card-image">
-                                        <img src="./assets/Images/Clientes/person6.png" alt="" class="card-img">
+                                        <img src="./assets/Images/Clientes/person6.png"
+                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
                                     </div>
                                 </div>
                                 <div class="card-content">
-                                    <h2 class="name">Bruna</h2>
-                                    <p class="textfont"> Amo essa loja! Super recomendo!</p>
+                                    <h3 class="name">Bruna</h3>
+                                    <p class="textfont"> Ótima empresa para comprar! Comprarei novamente mais coisas!
+                                        Entrega foi feita bem mais rápida do q eu esperava, mesmo comprando na Black
+                                        Friday, o que faz as entregas demorarem mais... Recomendo!</p>
                                 </div>
                             </div>
                             <div class="card swiper-slide">
                                 <div class="image-content">
                                     <span class="overlay"></span>
                                     <div class="card-image">
-                                        <img src="./assets/Images/Clientes/person7.png" alt="" class="card-img">
+                                        <img src="./assets/Images/Clientes/person7.png"
+                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
                                     </div>
                                 </div>
                                 <div class="card-content">
-                                    <h2 class="name">Tiago</h2>
-                                    <p class="textfont"> Loja top para gamers!</p>
+                                    <h3 class="name">Tiago</h3>
+                                    <p class="textfont"> Serviço ótimo e site muito organizado! A encomenda chegou antes
+                                        do previsto, bem embalada. E produto de excelente qualidade!!!</p>
                                 </div>
                             </div>
                             <div class="card swiper-slide">
                                 <div class="image-content">
                                     <span class="overlay"></span>
                                     <div class="card-image">
-                                        <img src="./assets/Images/Clientes/person8.png" alt="" class="card-img">
+                                        <img src="./assets/Images/Clientes/person8.png"
+                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
                                     </div>
                                 </div>
                                 <div class="card-content">
-                                    <h2 class="name">Marcos</h2>
-                                    <p class="textfont"> Amo essa loja! Recomendo.</p>
+                                    <h3 class="name">Marcos</h3>
+                                    <p class="textfont"> Muito bom serviço de embalagens e entregas, veio bem protegido.
+                                        O PS5 está bombando, jogos a todo vapor! Em tempo hábil! Recomendo a todos que
+                                        façam suas compras de games na LEVELUP! Show de bola!</p>
                                 </div>
                             </div>
                             <div class="card swiper-slide">
                                 <div class="image-content">
                                     <span class="overlay"></span>
                                     <div class="card-image">
-                                        <img src="./assets/Images/Clientes/person9.png" alt="" class="card-img">
+                                        <img src="./assets/Images/Clientes/person9.png"
+                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
                                     </div>
                                 </div>
                                 <div class="card-content">
-                                    <h2 class="name">Gustavo</h2>
-                                    <p class="textfont"> Serviço excelente!</p>
+                                    <h3 class="name">Gustavo</h3>
+                                    <p class="textfont"> Loja muito honesta e segura! recomendo muito!</p>
                                 </div>
                             </div>
 
@@ -378,21 +916,25 @@
                     <div class="swiper-button-prev swiper-navBtn"></div>
                     <div class="swiper-pagination"></div>
                 </div>
+            </section>
+        </div>
+        <div class="fase5">
+            <section aria-labelledby="FaleConosco">
+                <h2 class="titlefont padding" id="FaleConosco">Fale conosco</h2>
                 <div class="form-container">
                     <div id="form-title">
-                        <h2 class="titlefont">Fale conosco</h2>
                     </div>
                     <form action="https://formsubmit.co/ajax/luaneldermendes@gmail.com" mthod="POST">
                         <div class="form-field">
                             <label for="nome">Nome:</label>
                             <input type="text" name="nome" id="nome" required>
                         </div>
-                        
+
                         <div class="form-field">
                             <label for="email">Email:</label>
                             <input type="email" name="email" id="email" required>
                         </div>
-                        
+
                         <div class="form-field">
                             <label for="assunto">Assunto:</label>
                             <input type="assunto" name="assunto" id="assunto" required>
@@ -402,14 +944,14 @@
                             <label for="mensagem">Mensagem:</label>
                             <textarea name="mensagem" id="mensagem" required></textarea>
                         </div>
-                        
+
                         <button class="prettyButton" type="submit">Enviar</button>
                     </form>
                 </div>
-                <div  class = "zap">
-                    <a 
-                        href='https:api.whatsapp.com/send?phone=5531993327631' class = "icon" target='_blank'></i>
-                        <img src= "assets/Images/WhatsApp.jpeg"  width="50" alt = "Fale Conosco pelo WhatsApp" title="Fale Conosco pelo WhatsApp"/>
+                <div class="zap">
+                    <a href='https:api.whatsapp.com/send?phone=5531993327631' class="icon" target='_blank'></i>
+                        <img src="assets/Images/WhatsApp.jpeg" width="50" alt="Fale Conosco pelo WhatsApp"
+                            title="Fale Conosco pelo WhatsApp" />
                     </a>
                 </div>
             </section>
@@ -424,18 +966,22 @@
     <script src="assets/Scripts/unpkg.com_swiper@8.1.6_swiper-bundle.min.js"></script>
     <script src="assets/Scripts/glider.min.js"></script>
 
+
     <!-- JavaScript -->
     <!-- slider1 -->
     <script src="assets/Scripts/slider1.js"></script>
-    <!-- slider2 -->
-    <script src="assets/Scripts/slider2.js"></script>
+
+    <!-- slider3 -->
+    <script src="assets/Scripts/slider3.js"></script>
+    <!-- slider4 -->
+    <script src="assets/Scripts/slider4.js"></script>
     <!-- darkmode button -->
     <script src="assets/Scripts/8bits-mario-site.js"></script>
-     <!-- Responsivity navbar-->
+    <!-- Responsivity navbar-->
     <script src="assets/Scripts/Mobilenav.js"></script>
     <script src="https://kit.fontawesome.com/4ba6cacfd0.js" crossorigin="anonymous"></script>
-    
-    
+
+
 
 </body>
 

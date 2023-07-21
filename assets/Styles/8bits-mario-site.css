@@ -1,286 +1,332 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 /*Configuração padrão da página*/
-    *
-    {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Poppins Light 300', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins Light 300", sans-serif;
+}
+body {
+  position: relative; /* Necessário para posicionar o pseudo-elemento */
+  margin: 0; /* Remover margens padrão do body */
+  padding: 0;
+}
+body::before {
+  content: "";
+  background-image: url("../Images/sonic2.png");
+  background-size: 30px 30px;
+  opacity: 0.1; /* Define a opacidade da imagem de plano de fundo */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+/*Estilização da barra de navegação*/
+/*Estilização padrão de toda a barra de navegação*/
+.navbar {
+  display: flex;
+  background-color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  padding: 0 34px;
+  z-index: 999;
+}
+/*Estilização da logo da barra de navegação*/
+.logo img {
+  height: 50px;
+  width: 50px;
+}
+/*Estilização da lista de opções da barra de navegação*/
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+.nav-list li {
+  margin-left: 32px;
+}
+.nav-list li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-list li a:hover {
+  background-color: #ff0000;
+  color: white;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+  margin: 7px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 100vw;
+    height: 90vh;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .nav-list li a {
+    color: white;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  .mobile-menu.active .line:nth-child(2) {
+    opacity: 0;
+  }
+  .mobile-menu.active .line:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  .mobile-menu.active .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
     }
-    body{
-        position: relative; /* Necessário para posicionar o pseudo-elemento */
-        margin: 0; /* Remover margens padrão do body */
-        padding: 0;
+    to {
+      opacity: 1;
     }
-    body::before{
-        content: "";
-        background-image: url('../Images/sonic2.png');
-        background-size: 30px 30px;;
-        opacity: 0.1; /* Define a opacidade da imagem de plano de fundo */
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: -1
-    }
-    /*Estilização da barra de navegação*/
-        /*Estilização padrão de toda a barra de navegação*/
-            .navbar {
-                display: flex;
-                background-color: #ffffff;
-                justify-content: space-between;
-                align-items: center;
-                height: 10vh;
-                width: 100vw;
-                position: fixed;
-                padding: 0 34px;
-                z-index: 999;
-                
-            }
-        /*Estilização da logo da barra de navegação*/
-            .logo img{
-                height: 50px;
-                width: 50px;
-    
-            }
-        /*Estilização da lista de opções da barra de navegação*/
-            .nav-list{
-                display: flex;
-                list-style: none;
-            }
-            .nav-list li {
-                margin-left: 32px;
-            }
-            .nav-list li a {
-                color: rgb(0, 0, 0);
-                text-decoration: none;
-                padding: 5px;
-                font-family: 'Poppins', sans-serif;
-            }
+  }
+}
+/*Estilização do botão "Modo escuro" da barra de navegação*/
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+.label {
+  background-color: rgb(94, 94, 94);
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px;
+  position: relative;
+  height: 28px;
+  width: 50px;
+  transform: scale(1);
+}
+.label .ball {
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  left: 2px;
+  height: 24px;
+  width: 24px;
+  transform: translate(0px);
+  transition: transform 0.2s linear;
+}
+.checkbox:checked + .label .ball {
+  transform: translate(22px);
+}
+.fa-moon {
+  color: rgb(255, 255, 255);
+  padding: 5px;
+}
+.fa-sun {
+  color: rgb(255, 255, 255);
+  padding: 5px;
+}
 
-            .nav-list li a:hover {
-                background-color: #ff0000;
-                color: white;
-                transition: 0.3s;
-                border-radius: 10px;
-            }
-            .mobile-menu{
-                display: none;
-                cursor: pointer;
-            }
-            .line{
-                width: 30px;
-                height: 3px;
-                background-color: rgb(0, 0, 0);
-                margin: 7px;
-                transition: 0.3s;
-            }
+/*Estilização do site quando o modo escuro estiver ativado*/
+body.dark {
+  background-color: #2a2828;
+  color: white;
+}
+.dark .navbar {
+  background-color: black;
+}
+.dark .label {
+  background-color: white;
+}
+.dark .label .ball {
+  background-color: black;
+}
+.dark .fa-sun {
+  color: #5a5555;
+}
+.dark .fa-moon {
+  color: #5a5555;
+}
+.dark .line {
+  background-color: white;
+}
+.dark .nav-list li a {
+  color: white;
+}
+.dark .background-name {
+  text-shadow: 2px 2px black;
+}
+.dark .titlefont {
+  color: white;
+}
+.dark .product-box {
+  background-color: #0b0b14;
+}
 
-            @media (max-width: 999px){
-                
-                body{
-                    overflow-x: hidden;
-                }
-                .nav-list{
-                    position: absolute;
-                    top: 10vh;
-                    right: 0;
-                    width: 100vw;
-                    height: 90vh;
-                    background-color: black;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: space-around;
-                    transform: translateX(100%);
-                    transition: transform 0.3s ease-in;
-                }
-                .nav-list li{
-                    margin-left: 0;
-                    opacity: 0;
-                }
-                .nav-list li a{
-                    color:white;
-                }
-                .mobile-menu{
-                    display: block;
-                }
-                .nav-list.active{
-                    transform: translateX(0);
-                }
-                .mobile-menu.active .line:nth-child(2){
-                    opacity: 0;
-                }
-                .mobile-menu.active .line:nth-child(1){
-                    transform: translateY(10px) rotate(45deg);
-                }
-                .mobile-menu.active .line:nth-child(3){
-                    transform: translateY(-10px) rotate(-45deg);
-                }
+.dark .product-title {
+  color: #fff;
+  font-weight: bold;
+}
 
-                @keyframes navLinkFade{
-                    from{
-                        opacity: 0;
-                        transform: translateX(50px);
-                    }
-                    to{
-                        opacity: 1;
-                    }
-                }
-            }
-        /*Estilização do botão "Modo escuro" da barra de navegação*/
-            .checkbox {
-                opacity: 0;
-                position: absolute;
-            }
-            .label{
-                background-color: rgb(94, 94, 94);
-                border-radius: 50px;
-                cursor: pointer;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 2px;
-                position: relative;
-                height: 28px;
-                width: 50px;
-                transform: scale(1.0);
-            }
-            .label .ball{
-                background: rgb(255, 255, 255);
-                border-radius: 50%;
-                position: absolute;
-                top: 2px;
-                bottom: 2px;
-                left: 2px;
-                height: 24px;
-                width: 24px;
-                transform: translate(0px);
-                transition: transform 0.2s linear;
-            }
-            .checkbox:checked + .label .ball {
-                transform: translate(22px);
-                
-            }
-            .fa-moon{
-                color:rgb(255, 255, 255);
-                padding: 5px;
-            }
-            .fa-sun{
-                color: rgb(255, 255, 255);
-                padding: 5px;
-            }
+.dark .price-buy .p-price {
+  color: #fff;
+  font-weight: bold;
+}
+.dark .card {
+  background-color: #000;
+}
+.dark .card-image {
+  background-color: #000;
+}
+.dark .card2 {
+  background-color: #000;
+}
+.dark .name {
+  color: #fff;
+  font-weight: bold;
+}
+.dark .name2 {
+  color: #fff;
+  font-weight: bold;
+}
+.dark .product-category span {
+  color: #bcbdc3;
+  font-weight: bold;
+}
+.dark .textfont {
+  color: #fff;
+}
 
-            
-    /*Estilização do site quando o modo escuro estiver ativado*/
-        body.dark{
-            background-color: #2a2828;
-            color: white;
-        }
-        .dark .navbar{
-            background-color: black;
-        }
-        .dark .label{
-            background-color: white;
-        }
-        .dark .label .ball{
-            background-color: black;
-        }
-        .dark .fa-sun{
-            color:#5a5555
-        }
-        .dark .fa-moon{
-            color:#5a5555
-        }
-        .dark .line{
-            background-color: white;
-        }
-        .dark .nav-list li a{
-            color: white;
-        }
-        .dark .background-name{
-            text-shadow: 2px 2px black;
-        }
-        .dark .titlefont{
-            color: white;
-        }
-     /*Estilização do background inicial*/
-        .background{
-            height: 80vh;
-            display: flex;
-            justify-content:  center;
-            align-items: center;
-            background-image: linear-gradient(to left, blue, red);
-            background-size: 125% 100%;
-        }
-        .background-name{
-            padding: 5px;
-            font-size: 3vw;
-            color: white;
-            align-items: center;
-            position: absolute;
-            z-index: 2;
-        }
-        .background-name{
-            background: linear-gradient(to right,rgb(10, 208, 10) 20%, rgb(0, 64, 255) , yellow , brown);
-            -webkit-background-clip: text;
-            background-clip: text;
-            text-shadow: 2px 2px  rgb(255, 255, 255);
-            color: transparent;
-           
-        }
-        .background-name h1{
-            font-family: 'Press Start 2P', cursive;
-        }
-        #mario{
-            max-height: 42%;
-            width: 42%;
-            position: relative;
-            padding-left: 1vw;
-            margin-left: 2vw;
-            opacity: 0.5;
-            padding-top: 7vh;
-            transition: opacity 1s;
-            z-index: 1;
-        }
-        #sonic{
-            max-height: 42%;
-            width: 42%;
-            position: relative;
-            margin-left: 20vw;
-            padding-left: 1vw;
-            padding-top: 8vh;
-            opacity: 0.5;
-            transition: opacity 1s;
-            z-index: 1;
-        }
-        #sonic:hover {
-            opacity: 1;
-        }
-        #mario:hover {
-            opacity: 1;
-        }
-        @media (max-width: 900px){
-            .background{
-                height: 50vh;
-            }
-            .background-name{
-                font-size: 3vw;
-                padding-top: 8vh;
-                text-shadow: 2px 2px white;
-            }
-            .dark .background-name{
-                text-shadow: 2px 2px black;
-            }
-            #sonic{
-                width: 65%;
-                height: 65%;
-                margin-left: 10vw;
-            }
-            #mario{
-                width: 52%;
-                height: 52%;
-            }
-        }
+.dark .slider-btns button {
+  background-color: #bcbdc3;
+}
+.dark .slider-btns2 button {
+  background-color: #bcbdc3;
+}
+/*Estilização do background inicial*/
+.background {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to left, blue, red);
+  background-size: 125% 100%;
+}
+.background-name {
+  padding: 5px;
+  font-size: 3vw;
+  color: white;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+}
+.background-name {
+  background: linear-gradient(
+    to right,
+    rgb(10, 208, 10) 20%,
+    rgb(0, 64, 255),
+    yellow,
+    brown
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 2px 2px rgb(255, 255, 255);
+  color: transparent;
+}
+.background-name h1 {
+  font-family: "Press Start 2P", cursive;
+}
+#mario {
+  max-height: 42%;
+  width: 42%;
+  position: relative;
+  padding-left: 1vw;
+  margin-left: 2vw;
+  opacity: 0.5;
+  padding-top: 7vh;
+  transition: opacity 1s;
+  z-index: 1;
+}
+#sonic {
+  max-height: 42%;
+  width: 42%;
+  position: relative;
+  margin-left: 20vw;
+  padding-left: 1vw;
+  padding-top: 8vh;
+  opacity: 0.5;
+  transition: opacity 1s;
+  z-index: 1;
+}
+#sonic:hover {
+  opacity: 1;
+}
+#mario:hover {
+  opacity: 1;
+}
+@media (max-width: 900px) {
+  .background {
+    height: 50vh;
+  }
+  .background-name {
+    font-size: 3vw;
+    padding-top: 8vh;
+    text-shadow: 2px 2px white;
+  }
+  .dark .background-name {
+    text-shadow: 2px 2px black;
+  }
+  #sonic {
+    width: 65%;
+    height: 65%;
+    margin-left: 10vw;
+  }
+  #mario {
+    width: 52%;
+    height: 52%;
+  }
+}
+.padding {
+  padding-bottom: 40px;
+}
