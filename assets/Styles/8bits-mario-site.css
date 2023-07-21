@@ -307,7 +307,7 @@ body.dark {
 }
 @media (max-width: 900px) {
   .background {
-    height: 50vh;
+    height: 60vh;
   }
   .background-name {
     font-size: 3vw;
@@ -329,4 +329,21 @@ body.dark {
 }
 .padding {
   padding-bottom: 40px;
+}
+@media (min-width: 3000px) {
+    #mario {
+        max-height: 35%;
+        width: 35%;
+      }
+      #sonic {
+        max-height: 21%;
+        width: 21%;
+        position: relative;
+        margin-left: 40vw;
+        padding-left: 1vw;
+        padding-top: 8vh;
+        opacity: 0.5;
+        transition: opacity 1s;
+        z-index: 1;
+      }
 }
