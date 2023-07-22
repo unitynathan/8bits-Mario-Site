@@ -40,8 +40,8 @@ body::before {
 }
 /*Estilização da logo da barra de navegação*/
 .logo img {
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 100px;
 }
 /*Estilização da lista de opções da barra de navegação*/
 .nav-list {
@@ -330,20 +330,54 @@ body.dark {
 .padding {
   padding-bottom: 40px;
 }
+
+.paddingtop {
+  padding-top: 40px;
+}
 @media (min-width: 3000px) {
-    #mario {
-        max-height: 35%;
-        width: 35%;
-      }
-      #sonic {
-        max-height: 21%;
-        width: 21%;
-        position: relative;
-        margin-left: 40vw;
-        padding-left: 1vw;
-        padding-top: 8vh;
-        opacity: 0.5;
-        transition: opacity 1s;
-        z-index: 1;
-      }
+  #mario {
+    max-height: 35%;
+    width: 35%;
+  }
+  #sonic {
+    max-height: 21%;
+    width: 21%;
+    position: relative;
+    margin-left: 40vw;
+    padding-left: 1vw;
+    padding-top: 8vh;
+    opacity: 0.5;
+    transition: opacity 1s;
+    z-index: 1;
+  }
+}
+
+.container {
+  /* Defina as propriedades da sua div container aqui */
+}
+
+.zap {
+  /* Defina as propriedades da sua div zap aqui */
+}
+
+.footer {
+  background-color: #fff; /* Cor de fundo do rodapé */
+  color: #000; /* Cor do texto do rodapé */
+  padding: 20px; /* Espaçamento interno do rodapé */
+  text-align: left; /* Alinhar o texto à esquerda */
+}
+
+.footer p {
+  margin: 0; /* Remover as margens do parágrafo */
+  padding: 5px 0; /* Espaçamento interno do parágrafo */
+}
+
+.footer a {
+  margin-right: 10px; /* Espaçamento entre os links */
+}
+
+.footer img {
+  width: 50px; /* Largura das imagens */
+  height: auto; /* Altura automática para manter a proporção */
+  border-radius: 50%; /* Adicionar borda circular nas imagens */
 }
