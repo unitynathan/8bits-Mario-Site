@@ -95,7 +95,7 @@ body::before {
   }
   .nav-list li {
     top: 0;
-    padding-top: 12%;
+    padding-top: 50px;
     margin-left: 0px;
     opacity: 0;
   }
