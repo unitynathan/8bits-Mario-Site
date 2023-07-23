@@ -4,8 +4,7 @@
   padding-top: 20px;
   height: auto;
   background-attachment: local;
-  background-size: 100% 110%;
-  background-origin: content-box;
+ background-origin: content-box;
 }
 
 .form-field input,
