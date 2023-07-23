@@ -255,7 +255,15 @@ body.dark {
 .dark .container h4 {
   color: #fff;
 }
-.dark .container h3 {
+.dark .contacts h3 {
+  color: #fff;
+}
+.dark .footer-content {
+  background-color: #000;
+}
+
+.dark .footer-copyright {
+  font-weight: 100;
   color: #fff;
 }
 /*Estilização do background inicial*/
@@ -366,42 +374,64 @@ body.dark {
   }
 }
 
+footer {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  width: 100%;
+  color: #000;
+  font-weight: bold;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: #fff;
+  text-align: center;
+  padding-top: 2%;
+}
+
+.footer-contacts h3 {
+  margin-bottom: 0.75rem;
+}
+
 .social-media {
-  display: block;
-  text-align: center;
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  align-items: center;
+  justify-content: center;
 }
 
-.footer .social-media {
-  margin-right: 10px;
+.social-media .footer-link {
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #005eff;
+  text-decoration: none;
+  transition: all 0.4s;
 }
 
-.footer h3 {
-  text-align: center;
-  margin-bottom: 10px;
+.social-media .footer-link i {
+  font-size: 1.25rem;
 }
 
-.footer {
-  background-color: #fff; /* Cor de fundo do rodapé */
-  color: #000; /* Cor do texto do rodapé */
-  padding: 20px; /* Espaçamento interno do rodapé */
-  text-align: left; /* Alinhar o texto à esquerda */
+.social-media .footer-link :hover {
+  opacity: 0.8;
 }
 
-.footer p {
-  margin: 0; /* Remover as margens do parágrafo */
-  padding: 5px 0; /* Espaçamento interno do parágrafo */
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
 }
 
-.footer a {
-  margin-right: 20px;
-}
-
-.footer a:visited {
-  color: inherit;
-}
-
-.footer img {
-  width: 40px; /* Largura das imagens */
-  height: auto; /* Altura automática para manter a proporção */
-  border-radius: 50%; /* Adicionar borda circular nas imagens */
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
+  padding: 1.5rem;
+  font-weight: 100;
 }
