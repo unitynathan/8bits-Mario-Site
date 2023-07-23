@@ -352,12 +352,18 @@ body.dark {
   }
 }
 
-.container {
-  /* Defina as propriedades da sua div container aqui */
+.social-media {
+  display: block;
+  text-align: center;
 }
 
-.zap {
-  /* Defina as propriedades da sua div zap aqui */
+.footer .social-media {
+  margin-right: 10px;
+}
+
+.footer h3 {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .footer {
@@ -367,17 +373,22 @@ body.dark {
   text-align: left; /* Alinhar o texto à esquerda */
 }
 
+
 .footer p {
   margin: 0; /* Remover as margens do parágrafo */
   padding: 5px 0; /* Espaçamento interno do parágrafo */
 }
 
 .footer a {
-  margin-right: 10px; /* Espaçamento entre os links */
+  margin-right: 20px;
+}
+
+.footer a:visited{
+  color: inherit;
 }
 
 .footer img {
-  width: 50px; /* Largura das imagens */
+  width: 40px; /* Largura das imagens */
   height: auto; /* Altura automática para manter a proporção */
   border-radius: 50%; /* Adicionar borda circular nas imagens */
 }
