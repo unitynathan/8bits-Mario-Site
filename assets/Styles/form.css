@@ -2,7 +2,7 @@
   text-align: center;
   background-color: #e63b3b;
   height: 45vh;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 .form-field input,
@@ -19,7 +19,7 @@ textarea {
 }
 
 .form-field textarea {
-  width: 17.12em;
+  width: 25.1em;
   height: 6.5em;
 }
 
