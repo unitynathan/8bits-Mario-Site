@@ -1,8 +1,11 @@
 .form-container {
   text-align: center;
   background-color: #e63b3b;
-  height: 45vh;
-  padding-top: 15px;
+  padding-top: 20px;
+  height: auto;
+  background-attachment: local;
+  background-size: 100% 110%;
+  background-origin: content-box;
 }
 
 .form-field input,
@@ -19,7 +22,7 @@ textarea {
 }
 
 .form-field textarea {
-  width: 25.1em;
+  width: 17.12em;
   height: 6.5em;
 }
 
