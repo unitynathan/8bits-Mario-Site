@@ -14,6 +14,11 @@ textarea {
   background-color: rgb(240, 235, 216);
 }
 
+.form-field input{
+  width: 220px;
+  height: 17px;
+}
+
 .form-field label {
   display: block;
 }
