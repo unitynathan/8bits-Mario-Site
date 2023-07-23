@@ -244,6 +244,18 @@ body.dark {
 .dark .slider-btns2 button {
   background-color: #bcbdc3;
 }
+.dark .footer {
+  background-color: #000;
+}
+.dark .container p {
+  color: #fff;
+}
+.dark .container h4 {
+  color: #fff;
+}
+.dark .container h3 {
+  color: #fff;
+}
 /*Estilização do background inicial*/
 .background {
   height: 80vh;
@@ -373,7 +385,6 @@ body.dark {
   text-align: left; /* Alinhar o texto à esquerda */
 }
 
-
 .footer p {
   margin: 0; /* Remover as margens do parágrafo */
   padding: 5px 0; /* Espaçamento interno do parágrafo */
@@ -383,7 +394,7 @@ body.dark {
   margin-right: 20px;
 }
 
-.footer a:visited{
+.footer a:visited {
   color: inherit;
 }
 
